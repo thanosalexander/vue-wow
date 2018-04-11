@@ -1,19 +1,47 @@
-# Vue-wow
+# vue-wow
 
 ## Features
 
 * Ispire by wow.js Reveal CSS animation as you scroll down a page
+* Easy to migrate from wow.js to vue-wow.
+* Fast execution and lightweight code
+* Works with Animate.css
 
-## Usage
+## Install & basic usage
 
 ```bash
 # install
 $ npm install  v-wow
 ```
 
-```html
-<div class="class="holder fadeInUp"" v-wow="{ 'animation-name': 'fadeInUp','animation-duration': '1s'}"></div>
+```js 
+import vWow from 'v-wow'
+Vue.use(vWow);
 ```
+
+## Parameters
+
+```html
+<div class="class="holder" v-wow="{ 'animation-name': 'fadeInUp','animation-duration': '1s'}"></div>
+```
+| Parameters    | Description   | Default value  |
+| ------------- |-------------| -----|
+| animation-name       | Name of css animation | - |
+| animation-duration   | Duration of this animation      |   - |
+| animation-delay      | Animation Delay      |   - |
+
+### Directive + Data Attributes
+```html
+<div class="col-md fadeInUp" v-wow data-wow-delay="0.2s" data-wow-duration="2s"></div>
+```
+
+| Attribute    | Description   | Default value  |
+| ------------- |---------------------------------------| ----|
+| data-wow-duration   | Duration of this animation      |   - |
+| data-wow-delay      | Animation Delay                 |   - |
+
+
+## Example of Animation
 
 ```css
 @keyframes fadeInUp {
