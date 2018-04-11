@@ -24,7 +24,7 @@ Vue.use(vWow);
 ### Directive with parameters
 
 ```html
-<div class="class="holder" v-wow="{ 'animation-name': 'fadeInUp','animation-duration': '1s'}"></div>
+<div class="holder" v-wow="{ 'animation-name': 'fadeInUp','animation-duration': '1s'}"></div>
 ```
 
 | Parameters           | Description                  | Default value  |
@@ -35,7 +35,7 @@ Vue.use(vWow);
 
 ### Directive + Data Attributes
 ```html
-<div class="col-md fadeInUp" v-wow data-wow-delay="0.2s" data-wow-duration="2s"></div>
+<div class="fadeInUp" v-wow data-wow-delay="0.2s" data-wow-duration="2s"></div>
 ```
 
 | Attribute           | Description                     | Default value  |
