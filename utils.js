@@ -71,7 +71,6 @@ const getAnimationName = function(element) {
     return getCssVendor(element, 'animation-name');
 }
 
-<<<<<<< HEAD
 function isVisible(el){
     var rect = el.getBoundingClientRect();
     return (
@@ -81,33 +80,6 @@ function isVisible(el){
       (rect.right - rect.width) <= ( (window.innerWidth || document.documentElement.clientWidth))
     );
 }
-=======
-const offsetTop = function(element) {
-    var top;
-    while (element.offsetTop === void 0) {
-        element = element.parentNode;
-    }
-    top = element.offsetTop;
-    while ((element = element.offsetParent)) {
-        top += element.offsetTop;
-    }
-    return top;
-};
-
-/**
- * Check if the element is visible
- *
- * @param {DOMElementNode} el
- * @return Boolean
-*/
-const isVisible = function(el) {
-    var top, viewBottom, viewTop;
-    viewTop = window.pageYOffset;
-    viewBottom = viewTop + window.innerHeight;
-    top = offsetTop(el);
-    return top <= viewBottom;
-};
->>>>>>> 2ee4acbd9761fc638f9ca6faa88649fc5bcf391f
 
 /**
  * Trigger the animation to show the element whether is visible
@@ -128,13 +100,8 @@ const showElement = function(el, animationConfig) {
 };
 
 module.exports = {
-<<<<<<< HEAD
     WowListener: WowListener,
     getAnimationName: getAnimationName,
-=======
-    getAnimationName: getAnimationName,
-	offsetTop: offsetTop,
->>>>>>> 2ee4acbd9761fc638f9ca6faa88649fc5bcf391f
 	isVisible: isVisible,
 	showElement: showElement
 }
