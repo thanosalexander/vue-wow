@@ -18,11 +18,11 @@ export default {
                 //Note: "data-wow-animation" is not parameter from WOW.js (It was implement only to adapt for this interface) 
                 if(('animation-name' in animateConfig) === false){
                     animateConfig['animation-name'] = utils.getAnimationName(el)//el.style['animation-name'];
-                };
+                }
                 
                 if(('animation-delay' in animateConfig) === false && el.hasAttribute('data-wow-delay')){
                     animateConfig['animation-delay'] = el.getAttribute('data-wow-delay')
-                };
+                }
 
                 if(('animation-duration' in animateConfig) === false && el.hasAttribute('data-wow-duration')){
                     animateConfig['animation-duration'] = el.getAttribute('data-wow-duration')
