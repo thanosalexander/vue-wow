@@ -21,6 +21,8 @@ Vue.use(vWow);
 
 ## Parameters
 
+### Directive with parameters
+
 ```html
 <div class="class="holder" v-wow="{ 'animation-name': 'fadeInUp','animation-duration': '1s'}"></div>
 ```
