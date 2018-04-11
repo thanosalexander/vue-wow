@@ -26,21 +26,22 @@ Vue.use(vWow);
 ```html
 <div class="class="holder" v-wow="{ 'animation-name': 'fadeInUp','animation-duration': '1s'}"></div>
 ```
-| Parameters    | Description   | Default value  |
-| ------------- |-------------| -----|
-| animation-name       | Name of css animation | - |
-| animation-duration   | Duration of this animation      |   - |
-| animation-delay      | Animation Delay      |   - |
+
+| Parameters           | Description                  | Default value  |
+| -------------------- | ---------------------------- | ---------------|
+| animation-name       | Name of css animation        | -              |
+| animation-duration   | Duration of this animation   | -              |
+| animation-delay      | Animation Delay              | -              |
 
 ### Directive + Data Attributes
 ```html
 <div class="col-md fadeInUp" v-wow data-wow-delay="0.2s" data-wow-duration="2s"></div>
 ```
 
-| Attribute    | Description   | Default value  |
-| ------------- |---------------------------------------| ----|
-| data-wow-duration   | Duration of this animation      |   - |
-| data-wow-delay      | Animation Delay                 |   - |
+| Attribute           | Description                     | Default value  |
+| ------------------- |---------------------------------| -              |
+| data-wow-duration   | Duration of this animation      | -              |
+| data-wow-delay      | Animation Delay                 | -              |
 
 
 ## Example of Animation
