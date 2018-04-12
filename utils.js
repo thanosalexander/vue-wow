@@ -11,7 +11,7 @@ class WowListener {
     }
 
     register(el, animationConfig){
-        setTimeout(() => {
+        //setTimeout(() => {
             if(!showElement(el, animationConfig)){
                 this.items.push({ 
                     el: el, 
@@ -20,7 +20,7 @@ class WowListener {
                 if(this.listener == null)
                     this.registerListener();
             }
-        }, 1);
+        //}, 1);
     }
 
     registerListener() {
