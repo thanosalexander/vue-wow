@@ -99,7 +99,7 @@ const showElement = function(el, animationConfig) {
     return false;
 };
 
-module.exports = {
+export default {
     WowListener: WowListener,
     getAnimationName: getAnimationName,
 	isVisible: isVisible,
